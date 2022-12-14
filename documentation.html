@@ -48,11 +48,239 @@
         </div>
       </div>
   </header>
+
   <div class="container">
     <main role="main" class="pb-3">
-      <div class="row flex">
-        <div class="col-md-12">
-          Under construction.
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-info custom-panel">
+          <div class="panel-heading">
+            <h3 class="panel-title bold-text">About</h3>
+          </div>
+          <div class="panel-body">
+            <table class="spaced-table">
+              <tr>
+                <td>Title:</td>
+                <td>Visualization Poject 2 - Google Play Store Apps Analysis</td>
+              </tr>
+              <tr>
+                <td>Team Members:</td>
+                <td>Arunodhaya Reddy Chityala, Balaji Rao Solanki, Sai Kiran Butti, Tejaswini Parlapalli.</td>
+              </tr>
+              <tr>
+                <td>Advisor:</td>
+                <td><a href="https://soic.iupui.edu/people/khairi-reda" target="_blank">Dr. Khairi Reda</a></td>
+              </tr>
+            </table>
+            <br>
+
+            <div class="panel panel-info custom-panel">
+              <div class="panel-heading">
+                <h3 class="panel-title bold-text">Introduction</h3>
+              </div>
+              <div class="panel-body justify-text">
+                Android is one of the major operating systems in the market with billions of user base. To ease users'
+                everyday activities there exists many apps in the Google Play store as their primary download resource.
+                With the increase in the number of applications available in the play store, there exists some confusion
+                among users. Our primary goal of the project is to create visualizations that help the users select
+                appropriate apps based on their requirements and also to help manufacturers understand the trends of app
+                usage based on factors like app category, reviews, price, ratings, and installs. We made interactive
+                visualizations for each of the above elements which can be filtered by the users and have added various
+                charts to understand the choice of customers on their selections.
+              </div>
+            </div>
+            <br>
+            <div class="panel panel-info custom-panel">
+              <div class="panel-heading">
+                <h3 class="panel-title bold-text">Dataset Description</h3>
+              </div>
+              <div class="panel-body justify-text">
+                Google Play store and app store have millions of downloads every day and to help users identify the apps
+                they are looking for among the thousands of apps present, we wanted to develop a Power Bi visualization
+                that details and presents various options giving the user a chance to filter in the apps as per their
+                requirements. Our dataset consists of data in CSV format which includes a CSV file of 9660 unique app
+                values with details of the category they belong to, ratings, reviews, size, installs, prizes, and genres
+                of the apps. Our dataset consists of about 9.0 MB with various values needed to implement the
+                visualizations and has been extracted from Kaggle.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-info custom-panel">
+          <div class="panel-heading">
+            <h3 class="panel-title bold-text">Dashboard Design</h3>
+          </div>
+          <div class="panel-body">
+
+            <div class="panel panel-info custom-panel">
+              <div class="panel-heading">
+                <h3 class="panel-title">Initial Design</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-8 col-md-7 justify-text">
+                    Our plan was to make easily understandable and effective visualizations. So we initially thought of
+                    adding all the visualizations in a singular box format without the need to shift to other pages to
+                    have ease of access. Once we were clear on the types of charts to add we thought of adding filters
+                    to the side as in the below picture. We then came across a few blockers as we needed additional
+                    pages and adding side-by-side filters became a challenge.
+                  </div>
+                  <div class="col-lg-4 col-md-5">
+                    <img class="doc-img" src="img/documentation/scratch_work2.jpeg"
+                      alt="Scratch work for the design process" width="100%" height="100%">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-info custom-panel">
+              <div class="panel-heading">
+                <h3 class="panel-title">Final Design</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-4 col-md-5">
+                    <img class="doc-img" src="img/documentation/final-dashboard.png"
+                      alt="Scratch work for the design process" width="100%" height="100%">
+                  </div>
+                  <div class="col-lg-8 col-md-7 justify-text">
+                    Next, In the final layout, we added scorecards of the data along with the dropdown filter based on
+                    Release Day, month, and year to help visualize and understand the patterns of users. In the left top
+                    layout, the heat map is replaced with a tree map, the Bar chart is changed to a vertical bar chart.
+                    A World map is also added to display information about the number of applications owned by each
+                    country.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="panel panel-info custom-panel">
+          <div class="panel-heading">
+            <h3 class="panel-title bold-text">Questions</h3>
+          </div>
+          <div class="panel-body">
+
+          </div>
+        </div>
+
+        <div class="row flex isolate-row">
+          <div class="col-md-7 flex" style="padding-right: 5px;">
+            <div class="panel panel-info custom-panel">
+              <div class="panel-heading">
+                <h3 class="panel-title bold-text">Insights From Visualization</h3>
+              </div>
+              <div class="panel-body">
+                From the visualizations created, we are able to conclude the below observations:
+                <ol>
+                  <li>From the first chart, the Majority of the updates belonged to gaming apps, which made sense as new
+                    features would be released as a new version update for this genre.</li>
+                  <li>With the release of a new version, the installations vary unevenly, based on the performance of
+                    the updates.</li>
+                  <li>From the donut chart, we were able to decipher the most paid apps belonged to the family genre,
+                    for example, people preferred to buy family games to play together.</li>
+                  <li>From the categories bar chart and target audience pie chart we can observe that gaming apps as
+                    expected have mostly targeted teenagers and youngsters.</li>
+                  <li>For each installation, we were also able to note the total number of installations, user ratings,
+                    and app counts with the help of scorecards.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 flex" style="padding-left: 5px;">
+            <div class="panel panel-info custom-panel">
+              <div class="panel-heading">
+                <h3 class="panel-title bold-text">Takeaways From Class</h3>
+              </div>
+              <div class="panel-body justify-text">
+                With the help of the project and course, we were able to understand how to visualize the data
+                effectively and make necessary analyses from it. We were able to perform data cleaning and data
+                aggregations for visuals while choosing colors and designs that would elevate the insights we wished to
+                share, without deviating from the data itself. Additionally, we were able to reduce unnecessary junk
+                additions and make concise charts for the visuals.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row flex isolate-row">
+          <div class="col-md-8 flex" style="padding-right: 5px;">
+            <div class="panel panel-info custom-panel">
+              <div class="panel-heading">
+                <h3 class="panel-title bold-text">Team Members Contribution</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-lg-3 bold-text">Arunodhaya Reddy Chityala</div>
+                  <div class="col-lg-9">
+                    <ul>
+                      <li>Worked on data set collection and cleaning.</li>
+                      <li>Worked on the target audience and paid vs free rating charts.</li>
+                      <li>Answered the questions related to the above charts in the documentation.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 bold-text">Balaji Rao Solanki</div>
+                  <div class="col-lg-9">
+                    <ul>
+                      <li>Worked on installations per update chart.</li>
+                      <li>Added filters for genres, time, and rating.</li>
+                      <li>Embedded the Power BI code in the HTML application.</li>
+                      <li>Worked on consolidating all charts and documentation.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 bold-text">Sai Kiran Butti</div>
+                  <div class="col-lg-9">
+                    <ul>
+                      <li>Worked on App count by Abdroid version chart.</li>
+                      <li>Worked on Scorecards for total installations chart.</li>
+                      <li>Worked on average user rating, total app counts charts.</li>
+                      <li>Did final evaluation and changes and worked on documentation.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 bold-text">Tejaswini Parlapalli</div>
+                  <div class="col-lg-9">
+                    <ul>
+                      <li>Worked on data set collection and cleaning.</li>
+                      <li>Embedded the Power BI code in the HTML application.</li>
+                      <li>Worked on most installed apps chart.</li>
+                      <li>Did final evaluation and changes</li>
+                      <li>Worked on documentation and video presentation.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 flex" style="padding-left: 5px;">
+
+            <div class="panel panel-info custom-panel">
+              <div class="panel-heading">
+                <h3 class="panel-title bold-text">References</h3>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li>
+                    Power BI on <a href="https://learn.microsoft.com/en-us/training/powerplatform/power-bi">Microsoft
+                      Learn</a>
+                  </li>
+                  <li>
+                    Power BI Tutorial on <a href="https://www.tutorialspoint.com/power_bi/index.htm">Tutorialspoint</a>
+                  </li>
+                  <li>
+                    <a href="https://getbootstrap.com/docs/3.4/components">Bootstrap Components</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
