@@ -35,7 +35,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img src="img/google-play.png" class="brand-logo" />Google Play Store Apps
+          <a class="navbar-brand" href="index.html"><img src="img/google-play.png" class="brand-logo" />Google Play
+            Store Apps
             Analysis</a>
         </div>
 
@@ -100,7 +101,8 @@
                 requirements. Our dataset consists of data in CSV format which includes a CSV file of 9660 unique app
                 values with details of the category they belong to, ratings, reviews, size, installs, prizes, and genres
                 of the apps. Our dataset consists of about 9.0 MB with various values needed to implement the
-                visualizations and has been extracted from <a href="https://www.kaggle.com/datasets/lava18/google-play-store-apps">Kaggle</a>.
+                visualizations and has been extracted from <a
+                  href="https://www.kaggle.com/datasets/lava18/google-play-store-apps">Kaggle</a>.
               </div>
             </div>
           </div>
@@ -127,7 +129,7 @@
                   </div>
                   <div class="col-lg-4 col-md-5">
                     <img class="doc-img" src="img/documentation/scratch_work2.jpeg"
-                      alt="Scratch work for the design process" width="100%" height="100%">
+                      alt="Scratch work for the design process" width="100%" />
                   </div>
                 </div>
               </div>
@@ -141,7 +143,7 @@
                 <div class="row">
                   <div class="col-lg-4 col-md-5">
                     <img class="doc-img" src="img/documentation/final-dashboard.png"
-                      alt="Scratch work for the design process" width="100%" height="100%">
+                      alt="Scratch work for the design process" width="100%" />
                   </div>
                   <div class="col-lg-8 col-md-7 justify-text">
                     Next, In the final layout, we added scorecards of the data along with the dropdown filter based on
@@ -162,6 +164,191 @@
             <h3 class="panel-title bold-text">Questions</h3>
           </div>
           <div class="panel-body">
+            <h3 class="panel-title bold-text justify-text">1. Does the number of updates for apps in the play store
+              have any
+              effect on the number of downloads?</h3>
+            <br>
+            <div class="row">
+              <div class="col-lg-8 col-md-8">
+                We built a line graph to check the variations in the number of updates being added to the play store and
+                their impact on the downloads made by users. Interestingly we noticed that the number of updates being
+                released does not have any effect on the number of downloads.
+                <br>
+                <br>
+                One possible explanation for this could be, that the users aren’t aware of a new version release or are
+                happy with the existing version or that the majority of the updates/version changes being made might not
+                be huge changes to demand the installation of an additional download.
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <img src="img/documentation/installations-per-update.png" class="doc-img" width="100%" />
+              </div>
+            </div>
+            <hr>
+
+            <h3 class="panel-title bold-text justify-text">2. Does paid apps have more user ratings than unpaid one?
+              And if so, which apps have been most used in paid and unpaid categories?</h3>
+            <br>
+            <div class="row">
+              <div class="col-lg-3 col-md-3">
+                <img src="img/documentation/paid-vs-free-apps.png" class="doc-img" width="95%" height="95%" />
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <img src="img/documentation/most-installed-apps.png" class="doc-img" width="100%" />
+              </div>
+              <div class="col-lg-5 col-md-5">
+                To answer this question, we built two charts a donut chart to toggle between paid vs app ratings and a
+                funnel chart to understand which app has mostly been used. We found that he paid and unpaid apps have
+                almost similar user ratings, but when it comes to use, the unpaid apps are far more installed when
+                compared to the paid ones.
+              </div>
+            </div>
+            <hr>
+
+            <h3 class="panel-title bold-text justify-text">
+              3. Usually, apps are chosen based on their ratings and downloads. Can we visualize the relation
+              between ratings and downloads in the dataset? Additionally, Which categories of apps have the most
+              number of downloads and also have a good rating?
+            </h3>
+            <br>
+            <div class="row">
+              <div class="col-lg-7 col-md-7">
+                <div class="row">
+                  <div class="col-lg-8 col-md-8 justify-text">
+                    We created a bar chart to display the top most downloaded categories of apps, which when combined
+                    with the rating filter created , we can filter out the rating we are looking for and find the top
+                    category apps. from the above visual ,Gaming and Communication are the most downloaded categories of
+                    apps which also have a good rating of above 4.0.
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                    <img src="img/documentation/rating-filter.png" class="doc-img" width="100%" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-5">
+                <img src="img/documentation/most-downloaded-categories.png" class="doc-img" width="100%"
+                  />
+              </div>
+            </div>
+            <hr>
+
+            <h3 class="panel-title bold-text justify-text">
+              4. Youngsters are major consumers of new applications.is this statement true?If not, Which age group, the
+              app is targeted at, has a higher number of user downloads/installs recorded?
+            </h3>
+            <br>
+            <div class="row">
+              <div class="col-lg-3 col-md-3">
+                <img src="img/documentation/target-audience.png" class="doc-img" width="100%" />
+              </div>
+              <div class="col-lg-9 col-md-9 justify-text">
+                We added a pie chart to visualize the data of the targeted audience. Interestingly we found that the
+                developers mainly focused on developing apps that can be used by everyone. Followed by apps created for
+                teenagers. which means that although it is assumed that youngsters are the majority consumers, they
+                aren’t the only age group of people targeted for app development.
+              </div>
+            </div>
+            <hr>
+
+            <h3 class="panel-title bold-text justify-text">
+              5. As a follow-up to the previous question 4, for the apps being targeted at age groups above 17, which
+              were being mostly downloaded and are also receiving good ratings by the age groups above 17?
+            </h3>
+            <br>
+            <div class="row">
+              <div class="col-lg-8 col-md-7 justify-text">
+                <div class="row">
+                  <div class="col-lg-7 col-md-7 justify-text">
+                    To answer this question, we made a pie chart, a funnel chart and utilized the rating filter created,
+                    by selecting the target audience in the pie chart as 17+ and adding a rating filter we were able to
+                    check for the most downloaded app in the view in the funnel chart. It was noticed that for the year
+                    the data was collected Twitter was the app that was targeted at adults above 17+ and was also given
+                    a good rating by them.
+                  </div>
+                  <div class="col-lg-5 col-md-5">
+                    <img src="img/documentation/target-audience-selected.png" class="doc-img" width="100%" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-5">
+                <img src="img/documentation/most-installed-apps-selected.png" class="doc-img" width="100%" />
+              </div>
+            </div>
+            <hr>
+
+            <h3 class="panel-title bold-text justify-text">
+              6. Does geography influence the distribution/usage of apps , and if they do what are the top categories
+              and top apps in a country being installed /downloaded by the various age groups of users?
+            </h3>
+            <br>
+            <div class="justify-text">
+              Visualizations in the bar chart, pie chart and funnel chart can be viewed to answer this question. When
+              filtered by the geo map added to answer the question, we found that the technologically advanced countries
+              had varying preferences based on their consumer utilization of apps. For example age categories (18+) in
+              United states have mostly downloaded subway servers.
+            </div>
+            <div style="margin-top: 10px;">
+              <img src="img/documentation/world-map.png" class="doc-img" width="100%" />
+            </div>
+            <hr>
+
+            <h3 class="panel-title bold-text justify-text">
+              7. How can users select based on multiple factors? For example, a users wants to select the top downloaded
+              free apps in the Game category having a rating of more than 4 in India.How can he do that?
+            </h3>
+            <br>
+            <div class="row">
+              <div class="col-lg-8 col-md-6 justify-text">
+                Here we have used multiple filters from multiple visualizations. To do this we select the required
+                section from each visualization using the ctrl button. After selecting all the required sections, we can
+                see the results in the topmost apps visual. By varying the rating and payment filter, we select the
+                gaming category and county of choice in the map with a control button and we get the most installed app
+                in the funnel chart as subway surfers.
+              </div>
+              <div class="col-lg-2 col-md-3">
+                <img src="img/documentation/rating-filter.png" class="doc-img" width="100%" />
+              </div>
+              <div class="col-lg-2 col-md-3">
+                <img src="img/documentation/paid-vs-free-apps.png" class="doc-img" width="100%" />
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-lg-3 col-md-3">
+                <img src="img/documentation/most-downloaded-categories-selected.png" class="doc-img" width="100%" />
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <img src="img/documentation/most-installed-apps-games.png" class="doc-img" width="98%" />
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <img src="img/documentation/world-map-selected.png" class="doc-img" width="100%" />
+              </div>
+            </div>
+            <hr>
+
+            <h3 class="panel-title bold-text justify-text">
+              8. As a follow-up on answering individual choice questions with multiple filters, What is the average user rating for the paid apps in the social category released in 2017?
+            </h3>
+            <br>
+            <div class="row">
+              <div class="col-lg-4 col-md-3" style="text-align: center;">
+                <img src="img/documentation/year-filter.png" class="doc-img" width="98%" />
+              </div>
+              <div class="col-lg-5 col-md-3" style="text-align: center;">
+                <img src="img/documentation/most-downloaded-categories-comm.png" class="doc-img" width="85%" />
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <img src="img/documentation/paid-vs-free-filtered.png" class="doc-img" width="100%" />
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-lg-7 col-md-6 justify-text">
+                To answer this question, we can select the paid category in the donut chart, social as a category in the most downloaded app category, and the release time, we choose the time in which the app was released. The average rating appearing on the scorecards can be found to be 4.23.
+              </div>
+              <div class="col-lg-3 col-md-4">
+                <img src="img/documentation/avg-user-rating.png" class="doc-img" width="100%" />
+              </div>
+            </div>
 
           </div>
         </div>
